@@ -104,6 +104,113 @@
 </div>
 
 
+// mobile menu start 
+
+<header class="container border-b border-slate-400 hidden md:block">
+    <!-- header top part -->
+    <div class="flex justify-between items-center">
+        <div>
+            <img class="h-[100px]" src="./assets/logo.png" alt="">
+        </div>
+        <div class="flex items-center gap-10">
+            <div class="flex items-center gap-3">
+                <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
+                <div>
+                    <div class="text-2xl text-slate-800 font-semibold font-sans">415-205-5550</div>
+                    <div class="text-sm text-slate-600">24/7 Emergency Phone</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-3">
+                <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
+                <div>
+                    <div class="text-2xl text-slate-800 font-semibold font-sans">Monday - Friday </div>
+                    <div class="text-sm text-slate-600">9AM - 9PM</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar -->
+</header>
+
+<!-- Hamburger Button for Mobile -->
+<div class="md:hidden p-5">
+    <button id="menu-toggle" class="text-3xl text-blue-500">
+        <i class="fa-solid fa-bars"></i> <!-- Hamburger Icon -->
+    </button>
+</div>
+
+<!-- Mobile Menu (Initially Hidden) -->
+<div id="mobile-menu" class="fixed top-0 left-0 w-[250px] h-full bg-white shadow-lg z-50 transform -translate-x-full transition-all duration-300 ease-in-out">
+    <div class="p-5">
+        <button id="close-menu" class="text-3xl text-blue-500">
+            <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+        </button>
+    </div>
+    <nav class="px-5">
+        <ul class="space-y-4">
+            <li><a href="" class="block py-2 text-lg text-slate-800 hover:text-pink-600">Home</a></li>
+            <li><a href="" class="block py-2 text-lg text-slate-800 hover:text-pink-600">About</a></li>
+            <li><a href="" class="block py-2 text-lg text-slate-800 hover:text-pink-600">Contact Us</a></li>
+            <!-- Add more links as needed -->
+        </ul>
+    </nav>
+</div>
+
+<!-- Navbar for Desktop (Hidden on Mobile) -->
+<div class="bg-white sticky top-0 w-full z-[1000] shadow-xl hidden md:block">
+    <div class="container bg-white z-60">
+        <div class="w-full flex justify-between">
+            <nav>
+                <ul class="flex">
+                    <!-- Desktop Menu Items here -->
+                    <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
+                        <a href="">Home</a>
+                    </li>
+                    <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
+                        <a href="">About</a>
+                    </li>
+                    <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
+                        <a href="">Contact Us</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="flex gap-5">
+                <!-- Social Media Icons -->
+                <div class="pr-5">
+                    <div class="flex items-center gap-3 h-full">
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-pinterest"></i></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript to Toggle Menu -->
+<script>
+    // Get the elements
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    // Toggle the mobile menu visibility
+    menuToggle.addEventListener('click', () => {
+        mobileMenu.classList.toggle('-translate-x-full'); // Slide in the mobile menu
+    });
+
+    // Close the mobile menu
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('-translate-x-full'); // Slide out the mobile menu
+    });
+</script>
+
+
+// mobile menu end
+
+
 
 
   <main class="">
@@ -383,8 +490,6 @@
                         <i class="fa-solid fa-tooth"></i>
                     </div>
                 </div>
-                
-                
             
                 <!-- <div class="flex flex-col relative">
                     <div class="flex-1 h-full max-w-[300px]">
@@ -853,10 +958,27 @@
 
 
   <script>
+        function animateSlide() {
+            // Show the slide
+            $('.slide').removeClass('hidden').addClass('fade-in');
 
+            // Animate each section inside the slide
+            $('.slide .space-y-5 h2').each(function(index) {
+                $(this).delay(index * 300).addClass('slide-up');
+            });
+
+            // Animate icons with a slight delay
+            $('.slide .fa-teeth-open').each(function(index) {
+                $(this).delay(index * 400).addClass('slide-up-delayed');
+            });
+
+            // Button fade-in with delay
+            $('.slide button').delay(800).fadeIn(500);
+        }
       
 
         $(document).ready(function() {
+            animateSlide();
             var $slides = $('.slide');
             var $indicators = $('.indicator');
             var currentIndex = 0;
