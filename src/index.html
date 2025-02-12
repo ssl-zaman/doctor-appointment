@@ -16,210 +16,270 @@
   <link href="./output.css" rel="stylesheet">
 </head>
 <body class="font-sans relative">
-  <header class="container border-b border-slate-400 hidden md:block">
-      <!-- header top part  -->
-    <div class="flex justify-between items-center ">
+
+
+        <header class="container border-b border-slate-400 hidden md:block">
+            <!-- header top part  -->
+          <div class="flex justify-between items-center ">
+              <div>
+                  <img class="h-[100px]" src="./assets/logo.png" alt="">
+              </div>
+              <div class="flex items-center gap-10">
+                  <div class="flex items-center gap-3">
+                      <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
+                      <div>
+                          <div class="text-2xl text-slate-800 font-semibold font-sans">415-205-5550</div>
+                          <div class="text-sm text-slate-600">24/7 Emergency Phone</div>
+                      </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                      <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
+                      <div>
+                          <div class="text-2xl text-slate-800 font-semibold font-sans">Monday - Friday </div>
+                          <div class="text-sm text-slate-600">9AM - 9PM</div>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+          <!-- navbar  -->
+      </header>
+      
+    
+
+          <div class="bg-white sticky top-0 w-full z-[2200] shadow-xl hidden md:block">
+              <div class=" container bg-white ">
+              
+                  <div class="w-full  flex justify-between ">
+                     <nav class="">
+                         <!-- <ul class="flex">
+                             <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
+                                 <a class="" href="">Home</a>
+                                 <ul class="z-[2000] absolute left-0 mt-3 w-[120px] space-y-3 p-5 hidden group-hover:block bg-white border border-[rgba(0,0,0,0.2)]">
+                                     <li class="hover:text-pink-600 z-[5000]"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                    
+                                 </ul>
+                             </li>
+              
+                             <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
+                                 <a class="" href="">About</a>
+                                 <ul class="absolute left-0 mt-3 w-[120px] space-y-3 p-5 hidden group-hover:block bg-white border border-[rgba(0,0,0,0.2)]">
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                 </ul>
+                             </li>
+              
+                             <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
+                                 <a class="" href="">Contact Us</a>
+                                 <ul class="absolute left-0 mt-3 w-[120px] space-y-3 p-5 hidden group-hover:block bg-white border border-[rgba(0,0,0,0.2)]">
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                     <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
+                                 </ul>
+                             </li>
+              
+                             
+                         </ul> -->
+                         <ul class="flex gap-3">
+                             
+    
+                             <li class="navItem  ">
+                                <a class="  py-2 hover:border-b-2 hover:border-pink-800 ">Home</a>
+                                <!-- <div class="h-[2px] w-[60px] bg-pink-800 absolute bottom-1 left-1/2 transform -translate-x-1/2"></div> -->
+                                <ul class="absolute left-0 top-full bg-white w-[220px] text-sm pt-3  pb-5 flex flex-col gap-2 shadow-xl">
+                                    
+                                   
+                                    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                   
+                                </ul>
+                             </li>
+    
+    
+                             <li class="navItem  ">
+                                <a class="  py-2 hover:border-b-2 hover:border-pink-800 ">Services</a>
+                                <!-- <div class="h-[2px] w-[60px] bg-pink-800 absolute bottom-1 left-1/2 transform -translate-x-1/2"></div> -->
+                                <ul class="absolute left-0 top-full bg-white w-[220px] text-sm pt-3 pb-5 flex flex-col gap-2 shadow-xl">
+                                    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+    
+                                    <li class="group flex items-center gap-2 px-2 hover:text-pink-500">
+                                        <div class="hover-bar w-0 opacity-0 h-[2px] bg-pink-500 transition-all duration-300 group-hover:w-[10px] group-hover:opacity-100"></div>
+                                        <a href="">Sub Nav</a>
+                                    </li>
+                                </ul>
+                             </li>
+    
+    
+                             
+                         </ul>
+    
+                    </nav>
+              
+                     <div class="flex  gap-5">
+                         <div class=" pr-5">
+                             <div class="flex items-center gap-3 h-full">
+                                 <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-facebook"></i></a></div>
+                                 <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-youtube"></i></a></div>
+                                 <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+                                 <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-pinterest"></i></a></div>
+                             </div>
+                         </div>
+                         <!-- <div class="flex items-center gap-3">
+                             <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
+                             <div><a href=""><i class="fa-solid fa-bag-shopping"></i></a></div>
+                         </div> -->
+                     </div>
+                     
+                  </div>
+              </div>
+          </div>
+
+
+
+
+
+<!-- // mobile menu start  -->
+
+
+<!-- Hamburger Button for Mobile -->
+<div class="md:hidden p-5 flex gap-5 sticky top-0 z-[100] bg-white">
+    <button id="menu-toggle" class="text-3xl text-blue-500">
+        <i class="fa-solid fa-bars"></i> <!-- Hamburger Icon -->
+    </button>
+    <div>
+        <img class="h-[80px]" src="./assets/logo.png" alt="">
+    </div>
+
+   
+</div>
+
+<!-- Mobile Menu (Initially Hidden) -->
+<div id="mobile-menu" class="flex flex-col z-[1000] fixed top-0 left-0 w-[300px] h-full bg-white shadow-lg transform -translate-x-full transition-all duration-300 ease-in-out">
+    <div class="p-5  flex gap-5 ">
+        <button id="close-menu" class="text-3xl text-blue-500 absolute -right-10 top-10 close-btn">
+            <i class="fa-solid fa-times"></i> <!-- Close Icon -->
+        </button>
         <div>
-            <img class="h-[100px]" src="./assets/logo.png" alt="">
+            <img class="h-[80px]" src="./assets/logo.png" alt="">
         </div>
-        <div class="flex items-center gap-10">
+    </div>
+    <nav class="px-5 flex-1 flex flex-col">
+
+
+        <div class="flex flex-col items-center gap-10">
             <div class="flex items-center gap-3">
-                <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
-                <div>
-                    <div class="text-2xl text-slate-800 font-semibold font-sans">415-205-5550</div>
+                <div class="text-2xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
+                <div class="text-center">
+                    <div class="text-xl text-slate-800 font-semibold font-sans">415-205-5550</div>
                     <div class="text-sm text-slate-600">24/7 Emergency Phone</div>
                 </div>
             </div>
             <div class="flex items-center gap-3">
-                <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
-                <div>
-                    <div class="text-2xl text-slate-800 font-semibold font-sans">Monday - Friday </div>
+                <div class="text-2xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
+                <div class="text-center">
+                    <div class="text-xl text-slate-800 font-semibold font-sans">Monday - Friday </div>
                     <div class="text-sm text-slate-600">9AM - 9PM</div>
                 </div>
             </div>
             
         </div>
-    </div>
-    <!-- navbar  -->
-</header>
 
-<div class="bg-white sticky top-0 w-full z-[1000] shadow-xl hidden md:block">
-    <div class=" container bg-white z-60">
-    
-        <div class="w-full   flex justify-between ">
-           <nav class="">
-               <ul class="flex">
-                   <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
-                       <a class="" href="">Home</a>
-                       <ul class="absolute left-0 mt-3 w-[120px] space-y-3 p-5 hidden group-hover:block bg-white border border-[rgba(0,0,0,0.2)]">
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                          
-                       </ul>
-                   </li>
-    
-                   <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
-                       <a class="" href="">About</a>
-                       <ul class="absolute left-0 mt-3 w-[120px] space-y-3 p-5 hidden group-hover:block bg-white border border-[rgba(0,0,0,0.2)]">
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                       </ul>
-                   </li>
-    
-                   <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
-                       <a class="" href="">Contact Us</a>
-                       <ul class="absolute left-0 mt-3 w-[120px] space-y-3 p-5 hidden group-hover:block bg-white border border-[rgba(0,0,0,0.2)]">
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                           <li class="hover:text-pink-600"><a href="">Nav Link 1</a></li>
-                       </ul>
-                   </li>
-    
-                   
-               </ul>
-           </nav>
-    
-           <div class="flex  gap-5">
-               <div class=" pr-5">
-                   <div class="flex items-center gap-3 h-full">
-                       <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-facebook"></i></a></div>
-                       <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-youtube"></i></a></div>
-                       <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
-                       <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-pinterest"></i></a></div>
-                   </div>
-               </div>
-               <!-- <div class="flex items-center gap-3">
-                   <div><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></div>
-                   <div><a href=""><i class="fa-solid fa-bag-shopping"></i></a></div>
-               </div> -->
-           </div>
-           
-        </div>
-    </div>
-</div>
+        <div class="flex-1 flex gap-10 flex-col  py-5">
+            <div class="flex-1">
+                <ul class="flex flex-col">
 
+                    <li class="border-b border-slate-200   py-2 w-full flex justify-between relative">
+                        <div class="flex w-full  justify-between">
+                            <a class="flex-1 text-center">Home</a>
+                            <button class="mobileNavbtn">
 
-// mobile menu start 
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                  </svg>
+                            </button>
+                              <ul class="mobileSubNav absolute top-full w-full flex flex-col border-b border-slate-200">
+                                <li class="cursor-pointer border-slate-400 text-center py-2 w-full"><a class="w-full text-center">sub nav</a></li>
 
-<header class="container border-b border-slate-400 hidden md:block">
-    <!-- header top part -->
-    <div class="flex justify-between items-center">
-        <div>
-            <img class="h-[100px]" src="./assets/logo.png" alt="">
-        </div>
-        <div class="flex items-center gap-10">
-            <div class="flex items-center gap-3">
-                <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
-                <div>
-                    <div class="text-2xl text-slate-800 font-semibold font-sans">415-205-5550</div>
-                    <div class="text-sm text-slate-600">24/7 Emergency Phone</div>
-                </div>
+                                <li class="cursor-pointer border-slate-400 text-center py-2 w-full"><a class="w-full text-center">sub nav</a></li>
+
+                                <li class="cursor-pointer border-slate-400 text-center py-2 w-full"><a class="w-full text-center">sub nav</a></li>
+                              </ul>
+                        </div>
+                        
+                    </li>
+     
+     
+                    
+                </ul>
             </div>
-            <div class="flex items-center gap-3">
-                <div class="text-4xl text-blue-400"><i class="fa-solid fa-clock "></i></div>
-                <div>
-                    <div class="text-2xl text-slate-800 font-semibold font-sans">Monday - Friday </div>
-                    <div class="text-sm text-slate-600">9AM - 9PM</div>
+     
+            <div class="flex  gap-5">
+                <div class="mx-auto">
+                    <div class="flex items-center gap-5  h-full">
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-facebook"></i></a></div>
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-youtube"></i></a></div>
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
+                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a class="" href=""><i class="fa-brands fa-pinterest"></i></a></div>
+                    </div>
                 </div>
+              
             </div>
         </div>
-    </div>
-    <!-- navbar -->
-</header>
-
-<!-- Hamburger Button for Mobile -->
-<div class="md:hidden p-5">
-    <button id="menu-toggle" class="text-3xl text-blue-500">
-        <i class="fa-solid fa-bars"></i> <!-- Hamburger Icon -->
-    </button>
-</div>
-
-<!-- Mobile Menu (Initially Hidden) -->
-<div id="mobile-menu" class="fixed top-0 left-0 w-[250px] h-full bg-white shadow-lg z-50 transform -translate-x-full transition-all duration-300 ease-in-out">
-    <div class="p-5">
-        <button id="close-menu" class="text-3xl text-blue-500">
-            <i class="fa-solid fa-times"></i> <!-- Close Icon -->
-        </button>
-    </div>
-    <nav class="px-5">
-        <ul class="space-y-4">
-            <li><a href="" class="block py-2 text-lg text-slate-800 hover:text-pink-600">Home</a></li>
-            <li><a href="" class="block py-2 text-lg text-slate-800 hover:text-pink-600">About</a></li>
-            <li><a href="" class="block py-2 text-lg text-slate-800 hover:text-pink-600">Contact Us</a></li>
-            <!-- Add more links as needed -->
-        </ul>
     </nav>
 </div>
 
-<!-- Navbar for Desktop (Hidden on Mobile) -->
-<div class="bg-white sticky top-0 w-full z-[1000] shadow-xl hidden md:block">
-    <div class="container bg-white z-60">
-        <div class="w-full flex justify-between">
-            <nav>
-                <ul class="flex">
-                    <!-- Desktop Menu Items here -->
-                    <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
-                        <a href="">Home</a>
-                    </li>
-                    <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
-                        <a href="">About</a>
-                    </li>
-                    <li class="relative px-3 py-5 hover:border-x border-[rgba(0,0,0,0.2)] shadow-[4px_0_10px_rgba(0,0,0,0.2), -4px_0_10px_rgba(0,0,0,0.2) group">
-                        <a href="">Contact Us</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="flex gap-5">
-                <!-- Social Media Icons -->
-                <div class="pr-5">
-                    <div class="flex items-center gap-3 h-full">
-                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-facebook"></i></a></div>
-                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
-                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-linkedin-in"></i></a></div>
-                        <div class="text-blue-500 hover:text-pink-600 text-xl duration-200"><a href=""><i class="fa-brands fa-pinterest"></i></a></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- JavaScript to Toggle Menu -->
-<script>
-    // Get the elements
-    const menuToggle = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    const closeMenu = document.getElementById('close-menu');
-
-    // Toggle the mobile menu visibility
-    menuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('-translate-x-full'); // Slide in the mobile menu
-    });
-
-    // Close the mobile menu
-    closeMenu.addEventListener('click', () => {
-        mobileMenu.classList.add('-translate-x-full'); // Slide out the mobile menu
-    });
-</script>
-
-
-// mobile menu end
+<!-- // mobile menu end -->
 
 
 
 
   <main class="">
     <!-- hero booking section  -->
-    <section class="relative w-full h-[800px] slider ">
+    <section class="relative w-full h-[800px] slider z-[100]">
         <!-- slider 1  -->
-        <div class="w-full h-full slide">
+        <div class="w-full h-full slide z-[100]">
             <div class="w-full h-full ">
-                <img class=" w-full h-full" src="./assets/hero-2.jpg" alt="">
+                <img class=" w-full h-full z-0" src="./assets/hero-2.jpg" alt="">
             </div>
     
             <div class="absolute top-0 bottom-0 left-0 right-0" style="">
@@ -269,9 +329,9 @@
             </div>
         </div>
 
-        <div class="w-full h-full slide">
+        <div class="w-full h-full slide z-[100]">
             <div class="w-full h-full ">
-                <img class=" w-full h-full" src="./assets/hero-3.jpg" alt="">
+                <img class=" w-full h-full z-0"  src="./assets/hero-3.jpg" alt="">
             </div>
     
             <div class="absolute top-0 bottom-0 left-0 right-0" style="">
@@ -321,9 +381,9 @@
             </div>
         </div>
 
-        <div class="w-full h-full slide">
+        <div class="w-full h-full slide z-[100]">
             <div class="w-full h-full ">
-                <img class=" w-full h-full" src="./assets/hero-2.jpg" alt="">
+                <img  class=" w-full h-full z-0" src="./assets/hero-2.jpg" alt="">
             </div>
     
             <div class="absolute top-0 bottom-0 left-0 right-0" style="">
@@ -382,19 +442,49 @@
         
     </section>
 
-
-
-    <section class="bg-[#F2F2F2] hidden">
-        <div class="container">
-            <div class="w-1/3 bg-blue-500"></div>
-            <div class="w-3/5 bg-red-500"></div>
+    <section class="bg-[#F2F2F2] p-5 md:p-10 mt-[40px] md:-mt-[120px] z-[1000] bg-transparent">
+        <div class="container flex flex-col md:flex-row">
+            <div class="w-full md:w-1/2 relative z-[1500] -mr-[50px]">
+                <div class="z-[1500] bg-[#1055AE] p-5  md:p-10  md:absolute md:top-1/2 md:transform md:-translate-y-1/2 md:right-0">
+                    <div class="flex flex-col items-center justify-center gap-5">
+                        <div class="w-[150px] h-[3px] bg-pink-500"></div>
+                            <blockquote>
+                                <P class="text-white text-2xl quote">My family trusts Dr Fischer completely, he’s been with us for years and as helped us on numerous occasions</P>
+                            </blockquote>
+                     
+                        <div class="w-[150px] h-[3px] bg-pink-500"></div>
+                        <img src="./assets/img-signature.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 bg-white flex flex-col gap-10 pl-5 md:pl-[100px] p-5 md:p-20 z-[1000]">
+                <h2 class="text-3xl font-semibold text-blue-800">Book Your Appointment</h2>
+                <div class="flex flex-col md:flex-row gap-10 z-0">
+                    <img class="w-full md:w-1/2" src="./assets/booking1_min.png" alt=""/>
+                    <div class="w-full md:w-1/2 flex flex-col gap-5">
+                        <div class="flex flex-col w-full">
+                            <label for="phone" class="text-sm text-slate-700"> Name</label>
+                            <input type="tel" id="phone" class="border bg-white rounded border-gray-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="phone" class="text-sm text-slate-700"> Phone</label>
+                            <input type="tel" id="phone" class="border bg-white rounded border-gray-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <div class="flex flex-col w-full">
+                            <label for="date" class="text-sm text-slate-700">Preferred Date</label>
+                            <input type="date" id="date" class="w-full border bg-white rounded border-gray-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        </div>
+                        <button class="bg-pink-500 text-white px-5 py-3 rounded-md hover:bg-pink-400 transition duration-300">Book Appointment Now</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- servie list start  -->
-     <section class="bg-[#F2F2F2] py-20 ">
+     <section class="bg-[#F2F2F2] py-20 px-5">
         <div class="container space-y-10">
-            <div class="flex flex-col sm:flex-row justify-between items-center sm:items-end">
+            <div class="flex flex-col sm:flex-row justify-between items-center text-center md:text-left sm:items-end">
                 <div>
                     <h2 class="text-4xl text-pink-600 font-semibold">Committed To</h2>
                     <h2 class="text-6xl text-blue-700 font-bold">Excellence</h2>
@@ -407,9 +497,8 @@
                 
              
               
-                
-
-                <div class="flex flex-col relative w-full max-w-[400px] mx-auto">
+        
+                <div class="flex flex-col relative w-full max-w-[400px] mx-auto animate-slide-up">
                     <!-- Image Section with smaller height -->
                     <div class="w-full h-[250px] ">
                         <img class="w-full h-full object-cover rounded-t-lg" src="./assets/home-services.jpg" alt="">
@@ -537,17 +626,21 @@
 
 
     <!-- Booking Section Start -->
-    <section class="relative w-full h-auto md:h-[800px] flex flex-col md:flex-row items-center bg-cover bg-no-repeat" style="background-image: url('.//assets/chember1.jpg')">
+    <section class="relative w-full h-auto md:h-[800px] flex flex-col md:flex-row items-center bg-cover bg-no-repeat" 
+    style="
+    background-image: url('./assets/chember1.jpg'), 
+                      linear-gradient(0deg, rgba(255,255,255,0.88) 0%, rgba(255,255,255,1) 100%);"
+    >
         <!-- Background Image -->
         <div class="w-full md:w-1/2 h-full md:block order-2 sm:order-1">
-            <img class="" src="./assets/doctor.png" alt="Booking Background">
+            <img class="pt-20 px-10" src="./assets/doctor.png" alt="Booking Background">
         </div>
 
         <!-- Booking Form Container -->
         <div class="flex flex-col justify-center items-center md:items-start w-full md:w-1/2 px-5 md:px-10 p-10 bg-transparent bg-opacity-40 rounded-lg shadow-lg relative z-10 order-1 sm:order-2">
             <!-- Heading -->
             <div class="space-y-3 border-b border-gray-300 pb-6 w-full text-center md:text-left">
-                <h3 class="text-3xl md:text-4xl font-medium text-pink-500">Book Your Visit At</h3>
+                <h3 class="text-3xl md:text-4xl font-medium text-[#bc74a5]">Book Your Visit At</h3>
                 <h2 class="text-4xl md:text-5xl font-bold text-purple-600">DentiCare</h2>
                 <p class="text-sm text-gray-700">
                     Have an emergency? Book with us using the simple form below. We ensure superior deliverables and seamless web-enabled services.
@@ -575,12 +668,12 @@
                         </div>
                         <div class="flex flex-col w-full">
                             <label for="date" class="text-sm text-slate-700">Preferred Date</label>
-                            <input type="date" id="date" class="border bg-white rounded border-gray-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500">
+                            <input type="date" id="date" class="border bg-white rounded border-gray-400 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-purple-500 w-full">
                         </div>
                     </div>
 
-                    <div class="flex justify-center md:justify-start mt-4">
-                        <button class="bg-blue-800 text-white px-5 py-3 rounded-md hover:bg-blue-700 transition duration-300">Book Appointment Now</button>
+                    <div class="flex justify-center   mt-4">
+                        <button class="w-full bg-blue-800 text-white px-5 py-3 rounded-md hover:bg-blue-700 transition duration-300">Book Appointment Now</button>
                     </div>
                 </form>
             </div>
@@ -595,7 +688,7 @@
     <section class="bg-[#F2F2F2] py-20 relative ">
         <div class="container">
             <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-10 p-10">
-                <div class="flex gap-3 items-start"> 
+                <div class="flex gap-3 items-start info_animation"> 
                     <div class="text-4xl text-pink-600 mt-2">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
@@ -606,7 +699,7 @@
                 </div>
 
 
-                <div class="flex gap-3 items-start"> 
+                <div class="flex gap-3 items-start info_animation"> 
                     <div class="text-4xl text-pink-600 mt-2">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
@@ -616,18 +709,7 @@
                     </div>
                 </div>
 
-                <div class="flex gap-3 items-start"> 
-                    <div class="text-4xl text-pink-600 mt-2">
-                        <i class="fa-solid fa-teeth-open"></i>
-                    </div>
-                    <div class="space-y-2 ">
-                        <h2 class="text-xl font-semibold text-slate-800">General Dentistry</h2>
-                        <p class="text-sm text-slate-600">Competently parallel task researched data process </p>
-                    </div>
-                </div>
-
-
-                <div class="flex gap-3 items-start"> 
+                <div class="flex gap-3 items-start info_animation"> 
                     <div class="text-4xl text-pink-600 mt-2">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
@@ -638,7 +720,7 @@
                 </div>
 
 
-                <div class="flex gap-3 items-start"> 
+                <div class="flex gap-3 items-start info_animation"> 
                     <div class="text-4xl text-pink-600 mt-2">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
@@ -649,17 +731,7 @@
                 </div>
 
 
-                <div class="flex gap-3 items-start"> 
-                    <div class="text-4xl text-pink-600 mt-2">
-                        <i class="fa-solid fa-teeth-open"></i>
-                    </div>
-                    <div class="space-y-2 ">
-                        <h2 class="text-xl font-semibold text-slate-800">General Dentistry</h2>
-                        <p class="text-sm text-slate-600">Competently parallel task researched data process </p>
-                    </div>
-                </div>
-
-                <div class="flex gap-3 items-start"> 
+                <div class="flex gap-3 items-start info_animation"> 
                     <div class="text-4xl text-pink-600 mt-2">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
@@ -670,7 +742,28 @@
                 </div>
 
 
-                <div class="flex gap-3 items-start"> 
+                <div class="flex gap-3 items-start info_animation"> 
+                    <div class="text-4xl text-pink-600 mt-2">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <div class="space-y-2 ">
+                        <h2 class="text-xl font-semibold text-slate-800">General Dentistry</h2>
+                        <p class="text-sm text-slate-600">Competently parallel task researched data process </p>
+                    </div>
+                </div>
+
+                <div class="flex gap-3 items-start info_animation"> 
+                    <div class="text-4xl text-pink-600 mt-2">
+                        <i class="fa-solid fa-teeth-open"></i>
+                    </div>
+                    <div class="space-y-2 ">
+                        <h2 class="text-xl font-semibold text-slate-800">General Dentistry</h2>
+                        <p class="text-sm text-slate-600">Competently parallel task researched data process </p>
+                    </div>
+                </div>
+
+
+                <div class="flex gap-3 items-start info_animation"> 
                     <div class="text-4xl text-pink-600 mt-2">
                         <i class="fa-solid fa-teeth-open"></i>
                     </div>
@@ -682,13 +775,15 @@
             </div>
 
         </div>
-        <a class="bg-[#bc74a5] text-white  w-fit px-5 py-3 text-sm rounded-md absolute  -bottom-10 left-1/2 transform -translate-1/2 hover:opacity-80 duration-200 cursor-pointer">View Dentecare Solution</a>
+        <div class="button_animation">
+            <a class="bg-[#bc74a5] text-white  w-fit px-5 py-3 text-sm rounded-md absolute  -bottom-10 left-1/2 transform -translate-1/2 hover:opacity-80 duration-200 cursor-pointer text-center">View Dentecare Solution</a>
+        </div>
     </section>
     <!-- service provide  -->
 
     <!-- contact component start-->
     <section class="bg-white py-20 ">
-        <div class="container p-10">
+        <div class="container p-5 md:p-10">
 
             <div class="gap-10 mb-5">
                 <h2 class="text-5xl font-bold text-center text-slate-900"><span class="text-purple-700">Contact</span> <span class="text-pink-500">DentiCare</span></h2>
@@ -703,7 +798,7 @@
                   
                 </div>
                 <!-- booking section  -->
-                <div class="bg-[#1055AE] p-10 w-full md:w-1/3 md:absolute md:top-1/2 md:right-10 md:transform md:-translate-y-1/2 flex flex-col gap-5">
+                <div class="bg-[#1055AE] p-5 md:p-10 w-full md:w-1/3 md:absolute md:top-1/2 md:right-10 md:transform md:-translate-y-1/2 flex flex-col gap-5">
                     <h2 class="text-white text-2xl font-bold">Working Hours</h2>
                     <p class="text-white ">Check out DentiCare’s Office hours to plan your visit.</p>
                     <div>
@@ -808,7 +903,7 @@
             </div> -->
 
             <div class="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-10 lg:gap-16">
-                <div class="flex flex-col items-center gap-3 text-center">
+                <div class="flex flex-col items-center gap-3 text-center info_animation">
                     <div class="text-5xl text-purple-800">
                         <i class="fa-solid fa-notes-medical"></i>
                     </div>
@@ -819,7 +914,7 @@
                     </div>
                 </div>
             
-                <div class="flex flex-col items-center gap-3 text-center">
+                <div class="flex flex-col items-center gap-3 text-center info_animation">
                     <div class="text-5xl text-purple-800">
                         <i class="fa-solid fa-notes-medical"></i>
                     </div>
@@ -830,7 +925,7 @@
                     </div>
                 </div>
             
-                <div class="flex flex-col items-center gap-3 text-center">
+                <div class="flex flex-col items-center gap-3 text-center info_animation">
                     <div class="text-5xl text-purple-800">
                         <i class="fa-solid fa-notes-medical"></i>
                     </div>
@@ -841,7 +936,7 @@
                     </div>
                 </div>
             
-                <div class="flex flex-col items-center gap-3 text-center">
+                <div class="flex flex-col items-center gap-3 text-center info_animation">
                     <div class="text-5xl text-purple-800">
                         <i class="fa-solid fa-notes-medical"></i>
                     </div>
@@ -1002,7 +1097,7 @@
 
             // Start auto-slide
             function startAutoSlide() {
-                interval = setInterval(nextSlide, 3000);
+                interval = setInterval(nextSlide, 5000);
             }
 
             // Stop auto-slide when clicking an indicator
@@ -1022,6 +1117,173 @@
             changeSlide(currentIndex);
             startAutoSlide();
         });
+
+
+        $(document).ready(function(){
+
+            const closeBtn = document.getElementById('close-btn');
+            const menuToggle = document.getElementById('menu-toggle');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const closeMenu = document.getElementById('close-menu');
+    
+            closeMenu.classList.add('hidden');
+            // Toggle the mobile menu visibility
+            menuToggle.addEventListener('click', () => {
+                mobileMenu.classList.toggle('-translate-x-full'); // Slide in the mobile menu
+                closeMenu.classList.remove('hidden');
+            });
+    
+            // Close the mobile menu
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('-translate-x-full'); // Slide out the mobile menu
+                closeMenu.classList.add('hidden');
+            });
+        });
+
+
+
+        // $(document).ready(function () {
+        //     // When clicking on a menu item
+        //     $("li").click(function (event) {
+        //         event.stopPropagation(); // Prevent event bubbling
+                
+        //         // Close other open submenus
+        //         $("li ul").not($(this).children("ul")).slideUp();
+                
+        //         // Toggle the submenu for the clicked item
+        //         $(this).children("ul").slideToggle();
+        //     });
+
+        //     // Close submenu if clicking anywhere outside
+        //     $(document).click(function () {
+        //         $("li ul").slideUp();
+        //     });
+        // });
+
+
+        // service section 
+        $(document).ready(function () {
+            function animateOnScroll() {
+                $(".flex.flex-col.relative").each(function (index) {
+                    if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                        $(this)
+                            .delay(index * 300) // Delays each animation
+                            .animate({ opacity: 1, top: "0px" }, 500);
+                    }
+                });
+            }
+
+            // Initially set opacity 0
+            $(".flex.flex-col.relative").css({ opacity: 0, position: "relative", top: "50px" });
+
+            // Run animation on scroll
+            $(window).on("scroll", animateOnScroll);
+
+            // Also check once when page loads
+            animateOnScroll();
+        });
+
+
+        $(document).ready(function () {
+            function animateOnScroll() {
+                $(".info_animation").each(function (index) {
+                    if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                        $(this)
+                            .delay(index * 300) // Delays each animation
+                            .animate({ opacity: 1, top: "0px" }, 500);
+                    }
+                });
+            }
+
+            // Initially set opacity 0
+            $(".info_animation").css({ opacity: 0, position: "relative", top: "50px" });
+
+            // Run animation on scroll
+            $(window).on("scroll", animateOnScroll);
+
+            // Also check once when page loads
+            animateOnScroll();
+        });
+
+
+
+        
+        // $(document).ready(function () {
+        //     function animateOnScroll() {
+        //         $(".button_animation").each(function (index) {
+        //             if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+        //                 $(this)
+        //                     .delay(index * 300) // Delays each animation
+        //                     .animate({ opacity: 1, top: "0px" }, 500);
+        //             }
+        //         });
+        //     }
+
+        //     // Initially set opacity 0
+        //     $(".button_animation").css({ opacity: 0, position: "relative", top: "0px" });
+
+        //     // Run animation on scroll
+        //     $(window).on("scroll", animateOnScroll);
+
+        //     // Also check once when page loads
+        //     animateOnScroll();
+        // });
+
+
+
+        $(document).ready(function(){
+            // Initially hide all <ul> inside .navItem
+            $('.navItem').children('ul').hide();
+
+            // Hover event for .navItem
+            $('.navItem').hover(
+                function() {
+                    // Show dropdown menu
+                    $(this).children('ul').stop(true, true).slideDown();
+                    // Add border bottom to the <a> inside .navItem
+                    $(this).children('a').addClass('border-b-2 border-pink-800');
+                },
+                function() {
+                    // Hide dropdown menu
+                    $(this).children('ul').stop(true, true).slideUp();
+                    // Remove border bottom when hover is removed
+                    $(this).children('a').removeClass('border-b-2 border-pink-800');
+                }
+            );
+        });
+
+
+
+        $(document).ready(function() {
+            $(".hover-effect").hover(
+                function() {
+                    // Hover in: Hide barw and show barb with animation
+                    $(this).find(".barw").stop().animate({ width: "0px" }, 300); // Hide the white bar
+                    $(this).find(".barb").stop().animate({ width: "5px" }, 300); // Show the pink bar with animation
+                },
+                function() {
+                    // Hover out: Reset both bars to initial state
+                    $(this).find(".barw").stop().animate({ width: "5px" }, 300); // Reset white bar width
+                    $(this).find(".barb").stop().animate({ width: "0px" }, 300); // Hide the pink bar
+                }
+            );
+        });
+
+
+
+        $(document).ready(function() {
+            $('.mobileSubNav').hide();
+            // When mobileNavbtn is clicked
+            $('.mobileNavbtn').on('click', function() {
+                // Find the closest <ul> and toggle its visibility
+                $(this).siblings('ul').stop(true, true).slideToggle(); // Slide up/down
+            });
+        });
+
+
+
+     
+
 
   </script>
 

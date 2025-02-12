@@ -48,6 +48,51 @@
     }
 }
 
-.hidden {
-    visibility: hidden;
+
+
+.quote {
+    position: relative;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Top Quotation Mark */
+.quote::before {
+    content: "“";
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.7);
+    /* position: absolute;
+    top: -10px;
+    left: -5px; */
+    margin-bottom: 0px;
+}
+
+/* Bottom Quotation Mark */
+.quote::after {
+    content: "”";
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    bottom: -60px;
+    right: 100px; 
+    margin-bottom: 0px;
+}
+
+
+
+
+.navItem {
+    position: relative;
+    padding: 20px 30px;
+    transition: all 0.3s ease-in-out; /* Smooth effect */
+    
+}
+
+.navItem:hover {
+    /* border-bottom: 2px solid rgba(0, 0, 0, 0.2); */
+    /* border-left: 2px solid rgba(0, 0, 0, 0.2); 
+    border-right: 2px solid rgba(0, 0, 0, 0.2);  */
+    box-shadow: 
+        -4px 0 10px rgba(0, 0, 0, 0.2), /* Left shadow */
+        4px 0 10px rgba(0, 0, 0, 0.2);  /* Right shadow */
 }
